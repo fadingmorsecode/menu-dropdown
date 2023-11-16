@@ -1,3 +1,5 @@
+import "./styles.css";
+
 function dropdownManipulation(event) {
   const dropDownBtn = event.target.matches(".dropdown-btn");
   let currentDropDownMenu;
