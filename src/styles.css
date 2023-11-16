@@ -127,3 +127,72 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 5fr repeat(3, 1fr);
+  padding: 20px 140px 20px 140px;
+  background-color: lightblue;
+  position: relative;
+  z-index: 1;
+}
+
+header > div {
+  justify-self: center;
+}
+
+header > p {
+  color: white;
+  font-size: 35px;
+}
+
+div > button {
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 120px;
+  background-color: white;
+  font-size: 18px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  background-color: orange;
+  position: absolute;
+  left: 0;
+  top: -20px;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  width: 250px;
+  font-size: 25px;
+  padding: 20px;
+  justify-content: space-between;
+  visibility: hidden;
+  transition: top 0.3s ease-in-out;
+  z-index: 0;
+}
+
+.top-position {
+  top: 60px;
+}
+
+li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.visible {
+  visibility: visible;
+}
